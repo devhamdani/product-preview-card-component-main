@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+
+  <body
+    class="flex justify-center items-center bg-my_Cream first-letter:w-screen h-screen">
+    <main
+      class="sm:w-[560px] mob:w-[400px] h-max sm:h-[450px] m-3 mob:m-6 flex flex-col sm:flex-row items-start sm:justify-between sm:items-center rounded-xl bg-my_white shadow-xl overflow-hidden">
+      <!-- ____________ image section of card ______________ -->
+      <section class="w-full h-2/5 sm:h-full overflow-hidden">
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt=""
+          class="visible sm:hidden w-full h-full object-cover" />
+
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt=""
+          class="sm:block hidden w-full h-full object-cover" />
+      </section>
+
+      <!-- _____________ Card Content Section ______________ -->
+      <section
+        class="w-full h-3/5 sm:h-full overflow-hidden p-7 flex flex-col items-start justify-center gap-5">
+        <p
+          class="tracking-[0.5em] font-medium text-my_dark_grayish_blue text-sm"
+          >PERFUME</p
+        >
+        <h1 class="font-serif text-3xl text-my_very_dark_blue leading-8">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p
+          class="text-sm tracking-wider leading-6 text-my_dark_grayish_blue font-medium">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex items-center sm:my-1">
+          <p class="font-serif text-3xl text-my_dark_cyan mr-3">$149.99 </p>
+          <p class="font-sans text-sm text-my_dark_grayish_blue line-through"
+            >$169.99</p
+          >
+        </div>
+        <button
+          type="button"
+          class="rounded-lg bg-my_dark_cyan transition-colors hover:bg-my_darkest_cyan active:bg-my_darkest_cyan text-my_white flex justify-center items-center gap-5 font-bold w-full h-14">
+          <img
+            src="./images/icon-cart.svg"
+            alt=""
+            class="fill-my_white w-6 h-6" />
+          Add to Cart
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
